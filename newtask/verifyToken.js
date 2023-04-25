@@ -9,7 +9,6 @@ const verifyToken = (req, res, next) => {
     }
     catch(err){
         res.clearCookie('my_token')
-        return res.redirect('/login')
     }
 }
 
